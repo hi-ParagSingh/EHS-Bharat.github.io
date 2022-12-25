@@ -630,16 +630,12 @@ section {
   margin-bottom: 0;
 }
 
-.services .services_meta {
-  font-size: 14px;
-  font-weight: normal;
-}
-
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
   margin-bottom: 30px;
+  max-height: 300px;
 }
 
 .portfolio #portfolio-flters {
@@ -695,6 +691,9 @@ section {
   transition: 0.3s;
   position: relative;
   z-index: 1;
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .portfolio .portfolio-wrap .portfolio-links {
@@ -748,6 +747,7 @@ section {
   font-size: 20px;
   color: #fff;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
@@ -768,6 +768,11 @@ section {
 .portfolio .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
   bottom: 0;
+}
+
+.portfolio .services_meta {
+  font-size: 14px;
+  font-weight: normal;
 }
 
 /*--------------------------------------------------------------
