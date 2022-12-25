@@ -1,246 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Portfolio Details - Ninestars Bootstrap Template</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-  <title>Portfolio Details - Ninestars Bootstrap Template</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+    <script>
+      window.onload = function () {
+        var url = document.location.href,
+          params = url.split("?")[1].split("&");
+        console.log(params[0]);
 
-</head>
+        let page_data;
+        let servies_data = [
+          {
+            title: "Workplace ergonomics",
+            type: "workplace_ergonomics",
+            url: "assets/img/ergonomics.png",
+            description:
+              "Ergonomics is designing a job to fit the worker so the work is safer and more efficient. Implementing ergonomic solutions can make employees more comfortable and increase productivity.",
+          },
+          {
+            title: "Fire safety",
+            type: "fire_safety",
+            url: "assets/img/Fire-safety-at-public-places.jpg",
+            description:
+              "Active fire protection is an integral part of fire protection. AFP is characterized by items and/or systems, which require a certain amount of motion and response in order to work, contrary to passive fire protection.",
+          },
+          {
+            title: "Workplace violence prevention",
+            type: "violence_prevention",
+            url: "assets/img/istockphoto-1068535750-612x612.jpg",
+            description:
+              "To reduce the possibility of workplace violence, companies must identify risk factors in their workplace and the way their workers operate, take necessary steps to limit those risks,& should build an extraordinary team culture. And we are not just talking about dangerous instances like shooting.",
+          },
+          {
+            title: "Employee health resources",
+            type: "health_resources",
+            url: "assets/img/Texas_Health_Resources_Companies_Care.jpg",
+            description:
+              "Employee health encompasses the physical and mental status of your employees. It can cover illness and wellness in the same breath. When we talk about health, physical health comes into mind first, but mental health is just as important. And bad physical health can lead to bad mental health and vice versa.",
+          },
+          {
+            title: "Environmental safety",
+            type: "environmental_safety",
+            url: "assets/img/Safety and Environmental Management.png",
+            description:
+              "Environment, health and safety, EHS is an acronym for the set that studies and implements the practical aspects of protecting the environment and maintaining health and safety at occupation. In simple terms it is what organizations must do to make sure that their activities do not cause harm to anyone.",
+          },
+          {
+            title: "Equipment safety",
+            type: "equipment_safety",
+            url: "assets/img/equipment.jpg",
+            description:
+              "Safety equipment, also known as personal protective equipment, is specifically designed to help protect workers against health or safety risks on the jobsite. By wearing the appropriate safety equipment, workers can decrease the number of preventable accidents that occur on jobsites every year.",
+          },
+          {
+            title: "Online safety and cyber security",
+            type: "cyber_security",
+            url: "assets/img/online_safety.webp",
+            description:
+              "While cybersecurity protects devices and networks from harm by third parties, Online Safety protects the people using them from harm by the devices and networks (and therefore third parties) through awareness, education, information and technology.",
+          },
+          {
+            title: "Electrical safety",
+            type: "electrical_safety",
+            url: "assets/img/workplace-electrical-safety.jpg",
+            description:
+              "Electrical safety is a system of organizational measures and technical means to prevent harmful and dangerous effects on workers from electric current, arcing, electromagnetic fields and static electricity.",
+          },
+          {
+            title: "Hazard Communication Standards",
+            type: "communication_standards",
+            url: "assets/img/hazard.jpg",
+            description:
+              "The Hazard Communication Standard requires employers in the United States to disclose toxic and hazardous substances in workplaces. This is related to the Worker Protection Standard.",
+          },
+          {
+            title: "Machinery and Equipment Safety Machine guarding",
+            type: "machine_safety",
+            url: "assets/img/machine_guards.jpg",
+            description:
+              "Machine guarding is a safety feature on or around manufacturing or other engineering equipment consisting of a shield or device covering hazardous areas of a machine to prevent contact with body parts or to control hazards like chips or sparks from exiting the machine.",
+          },
+          {
+            title: "Chemical hazard substance",
+            type: "hazard_substance",
+            url: "assets/img/istockphoto-157529625-612x612.jpg",
+            description:
+              "A chemical hazard is a substance that has the potential to cause harm to life or health. Chemicals are widely used in the home and in many other places. Exposure to chemicals can cause acute or long-term detrimental health effects.",
+          },
+          {
+            title: "Scaffolding",
+            type: "scaffolding",
+            url: "assets/img/scaffolding-components.jpg",
+            description:
+              "Scaffolding, also called scaffold or staging, is a temporary structure used to support a work crew and materials to aid in the construction, maintenance and repair of buildings, bridges and all other man-made structures.",
+          },
+          {
+            title: "Chemical safety",
+            type: "chemical_safety",
+            url: "assets/img/Origami-Risk.jpg",
+            description:
+              "Chemicals as elements, compounds, mixtures, solutions and emulsions are very widely used and transported in the modern industrial society. ",
+          },
+          {
+            title: "Construction site safety",
+            type: "construction_safety",
+            url: "assets/img/Construction.jpeg",
+            description:
+              "Construction site safety is an aspect of construction-related activities concerned with protecting construction site workers and others from death, injury, disease or other health-related risks.",
+          },
+          {
+            title: "Radiation safety",
+            type: "radiation_safety",
+            url: "assets/img/istockphoto-692567132-612x612.jpg",
+            description:
+              "The guiding principle of radiation safety is “ALARA”. ALARA stands for “as low as reasonably achievable”. This principle means that even if it is a small dose, if receiving that dose has no direct benefit, you should try to avoid it.",
+          },
+          {
+            title: "Driver Safety",
+            type: "driver_safety",
+            url: "assets/img/driver.jpg",
+            description:
+              "As people age, changes occur in their mental and physical condition that may affect their ability to assess traffic situations and respond to them rapidly and appropriately. Having driven for many years, older individuals may not recognize these changes or the increased risk of accident associated with them. Driver safety assesses the ability of a driver, regardless of age, to control a vehicle and respond appropriately to changing traffic conditions.",
+          },
+          {
+            title:
+              "Hazardous Waste Operations and Emergency Response (HAZWOPER)",
+            type: "hazwoper",
+            url: "assets/img/03102022_HAZWOPER_Banner.jpg",
+            description:
+              "HAZWOPER is the one of the most prominent international standards that governs health and safety work environments related to hazardous elements. Coined by OSHA, HAZWOPERM has been formulated as a regulatory standard which intends to protect employees working at sites of unprotected and uncontrolled hazardous wastes, performing clean-up operations of hazardous wastes without protective gears, engaged in waste treatment, storage and disposal plants and involved in emergency response activities related to hazardous items.",
+          },
+          {
+            title: "Hazard Communication",
+            type: "hazard_communication",
+            url: "assets/img/images.jpeg",
+            description:
+              "The Hazard Communication Standard requires employers in the United States to disclose toxic and hazardous substances in workplaces. This is related to the Worker Protection Standard.",
+          },
+          {
+            title: "Mining Safety",
+            type: "mining_safety",
+            url: "assets/img/Safety-in-Mining.jpg",
+            description:
+              "Mine safety is a broad term referring to the practice of controlling and managing a wide range of hazards associated with the life cycle of mining-related activities.",
+          },
+          {
+            title: "Incident Investigation and Reporting",
+            type: "investigation_reporting",
+            url: "assets/img/Accident-Reporting-Investigation-Construction-Site.jpg",
+            description:
+              "Incident investigation is a process for reporting, tracking, and investigating incidents that includes a formal process for investigating incidents, including staffing, performing, documenting, and tracking investigations of process safety incidents and the trending of incident and incident investigation data to identify recurring incidents. ",
+          },
+        ];
 
-<body>
+        servies_data.forEach((e) => {
+          if (e.type === params[0]) {
+            page_data = e;
+          }
+        });
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
+        const service_details = document.querySelector("#service_details");
+        if (service_details) {
+          let div = document.createElement("div");
+          div.className = "row gy-4";
+          div.innerHTML = ` <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="${page_data.url}" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
 
-      <div class="logo">
-        <h1 class="text-light"><a href="index.html"><span>Ninestars</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>${page_data.title}</h3>
+              </div>
+              <div class="portfolio-description">
+                <p>
+                 ${page_data.description}
+                </p>
+              </div>
+            </div>`;
+          service_details.appendChild(div);
+        }
+      };
+    </script>
+  </head>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About Us</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <main id="main">
-
-    <!-- ======= Breadcrumbs Section ======= -->
-    <section class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Portfolio Details</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li>Portfolio Details</li>
-          </ol>
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <h1 class="text-light">
+            <a href="index.html"><span>EHS Bharat</span></a>
+          </h1>
+          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
         </div>
 
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li>
+              <a class="nav-link scrollto active" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="index.html#about">Know Us</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="index.html#services"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="index.html#portfolio"
+                >Trainings</a
+              >
+            </li>
+            <li>
+              <a class="getstarted scrollto" href="index.html#contact"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
       </div>
-    </section><!-- Breadcrumbs Section -->
+    </header>
+    <!-- End Header -->
 
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
+    <main id="main">
+      <!-- ======= Portfolio Details Section ======= -->
+      <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+          <div class="row gy-4" id="service_details"></div>
+        </div>
+      </section>
+      <!-- End Portfolio Details Section -->
+    </main>
+    <!-- End #main -->
 
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-1.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-2.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-3.jpg" alt="">
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>Ninestars</h3>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                A108 Adam Street <br />
+                New York, NY 535022<br />
+                United States <br /><br />
+                <strong>Phone:</strong> +1 5589 55488 55<br />
+                <strong>Email:</strong> info@example.com<br />
               </p>
             </div>
-          </div>
 
-        </div>
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
+                </li>
+              </ul>
+            </div>
 
-      </div>
-    </section><!-- End Portfolio Details Section -->
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our top trainings</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Web Design</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Web Development</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Product Management</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Marketing</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Graphic Design</a>
+                </li>
+              </ul>
+            </div>
 
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Ninestars</h3>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Social Networks</h4>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+              <p>Connect with us</p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
             </div>
           </div>
-
         </div>
       </div>
-    </div>
+    </footer>
+    <!-- End Footer -->
 
-    <div class="container py-4">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Ninestars</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
