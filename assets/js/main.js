@@ -306,7 +306,7 @@
     {
       title: "Excavation safety",
       type: "excavation_safety",
-      url: "assets/img/evacuation.jpg",
+      url: "assets/img/excavation.jpg",
       description:
         "Excavation Safety is a standardized set of safety precautions for trenching and excavation to eliminate hazards and control risks in compliance with regulations. It is also referred to as Trenching and Excavation Safety as often cited by the U.S. Occupational Safety and Health Administration (OSHA).",
     },
