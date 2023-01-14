@@ -256,28 +256,22 @@
     {
       title: "Workplace ergonomics",
       type: "workplace_ergonomics",
-      url: "assets/img/ergonomics.png",
+      url: "assets/img/ergonomics.JPG",
       description:
         "Ergonomics is designing a job to fit the worker so the work is safer and more efficient. Implementing ergonomic solutions can make employees more comfortable and increase productivity.",
     },
     {
       title: "Fire safety",
       type: "fire_safety",
-      url: "assets/img/Fire-safety-at-public-places.jpg",
+      url: "assets/img/fire_safety.png",
       description:
         "Active fire protection is an integral part of fire protection. AFP is characterized by items and/or systems, which require a certain amount of motion and response in order to work, contrary to passive fire protection.",
     },
-    {
-      title: "Workplace violence prevention",
-      type: "violence_prevention",
-      url: "assets/img/istockphoto-1068535750-612x612.jpg",
-      description:
-        "To reduce the possibility of workplace violence, companies must identify risk factors in their workplace and the way their workers operate, take necessary steps to limit those risks,& should build an extraordinary team culture. And we are not just talking about dangerous instances like shooting.",
-    },
+
     {
       title: "Employee health resources",
       type: "health_resources",
-      url: "assets/img/Texas_Health_Resources_Companies_Care.jpg",
+      url: "assets/img/employee_health.jpg",
       description:
         "Employee health encompasses the physical and mental status of your employees. It can cover illness and wellness in the same breath. When we talk about health, physical health comes into mind first, but mental health is just as important. And bad physical health can lead to bad mental health and vice versa.",
     },
@@ -296,25 +290,25 @@
         "Safety equipment, also known as personal protective equipment, is specifically designed to help protect workers against health or safety risks on the jobsite. By wearing the appropriate safety equipment, workers can decrease the number of preventable accidents that occur on jobsites every year.",
     },
     {
-      title: "Online safety and cyber security",
-      type: "cyber_security",
-      url: "assets/img/online_safety.webp",
+      title: "Work at height safety",
+      type: "height_safety",
+      url: "assets/img/height_safety.jpg",
       description:
-        "While cybersecurity protects devices and networks from harm by third parties, Online Safety protects the people using them from harm by the devices and networks (and therefore third parties) through awareness, education, information and technology.",
+        "Working at height remains one of the biggest causes of fatalities and major injuries. Common cases include falls from roofs, ladders, and through fragile surfaces. ‘Work at height’ means work in any place where, if there were no precautions in place, a person could fall a distance liable to cause personal injury (for example a fall through a fragile roof down an unprotected lift shaft, stairwells).",
     },
     {
       title: "Electrical safety",
       type: "electrical_safety",
-      url: "assets/img/workplace-electrical-safety.jpg",
+      url: "assets/img/electrical.jpg",
       description:
         "Electrical safety is a system of organizational measures and technical means to prevent harmful and dangerous effects on workers from electric current, arcing, electromagnetic fields and static electricity.",
     },
     {
-      title: "Hazard Communication Standards",
-      type: "communication_standards",
-      url: "assets/img/hazard.jpg",
+      title: "Excavation safety",
+      type: "excavation_safety",
+      url: "assets/img/evacuation.jpg",
       description:
-        "The Hazard Communication Standard requires employers in the United States to disclose toxic and hazardous substances in workplaces. This is related to the Worker Protection Standard.",
+        "Excavation Safety is a standardized set of safety precautions for trenching and excavation to eliminate hazards and control risks in compliance with regulations. It is also referred to as Trenching and Excavation Safety as often cited by the U.S. Occupational Safety and Health Administration (OSHA).",
     },
     {
       title: "Machinery and Equipment Safety Machine guarding",
@@ -322,13 +316,6 @@
       url: "assets/img/machine_guards.jpg",
       description:
         "Machine guarding is a safety feature on or around manufacturing or other engineering equipment consisting of a shield or device covering hazardous areas of a machine to prevent contact with body parts or to control hazards like chips or sparks from exiting the machine.",
-    },
-    {
-      title: "Chemical hazard substance",
-      type: "hazard_substance",
-      url: "assets/img/istockphoto-157529625-612x612.jpg",
-      description:
-        "A chemical hazard is a substance that has the potential to cause harm to life or health. Chemicals are widely used in the home and in many other places. Exposure to chemicals can cause acute or long-term detrimental health effects.",
     },
     {
       title: "Scaffolding",
@@ -347,21 +334,14 @@
     {
       title: "Construction site safety",
       type: "construction_safety",
-      url: "assets/img/Construction.jpeg",
+      url: "assets/img/construction_safety.webp",
       description:
         "Construction site safety is an aspect of construction-related activities concerned with protecting construction site workers and others from death, injury, disease or other health-related risks.",
     },
     {
-      title: "Radiation safety",
-      type: "radiation_safety",
-      url: "assets/img/istockphoto-692567132-612x612.jpg",
-      description:
-        "The guiding principle of radiation safety is “ALARA”. ALARA stands for “as low as reasonably achievable”. This principle means that even if it is a small dose, if receiving that dose has no direct benefit, you should try to avoid it.",
-    },
-    {
       title: "Driver Safety",
       type: "driver_safety",
-      url: "assets/img/driver.jpg",
+      url: "assets/img/driver.webp",
       description:
         "As people age, changes occur in their mental and physical condition that may affect their ability to assess traffic situations and respond to them rapidly and appropriately. Having driven for many years, older individuals may not recognize these changes or the increased risk of accident associated with them. Driver safety assesses the ability of a driver, regardless of age, to control a vehicle and respond appropriately to changing traffic conditions.",
     },
@@ -373,25 +353,32 @@
         "HAZWOPER is the one of the most prominent international standards that governs health and safety work environments related to hazardous elements. Coined by OSHA, HAZWOPERM has been formulated as a regulatory standard which intends to protect employees working at sites of unprotected and uncontrolled hazardous wastes, performing clean-up operations of hazardous wastes without protective gears, engaged in waste treatment, storage and disposal plants and involved in emergency response activities related to hazardous items.",
     },
     {
-      title: "Hazard Communication",
-      type: "hazard_communication",
-      url: "assets/img/images.jpeg",
-      description:
-        "The Hazard Communication Standard requires employers in the United States to disclose toxic and hazardous substances in workplaces. This is related to the Worker Protection Standard.",
-    },
-    {
-      title: "Mining Safety",
-      type: "mining_safety",
-      url: "assets/img/Safety-in-Mining.jpg",
-      description:
-        "Mine safety is a broad term referring to the practice of controlling and managing a wide range of hazards associated with the life cycle of mining-related activities.",
-    },
-    {
       title: "Incident Investigation and Reporting",
       type: "investigation_reporting",
       url: "assets/img/Accident-Reporting-Investigation-Construction-Site.jpg",
       description:
         "Incident investigation is a process for reporting, tracking, and investigating incidents that includes a formal process for investigating incidents, including staffing, performing, documenting, and tracking investigations of process safety incidents and the trending of incident and incident investigation data to identify recurring incidents. ",
+    },
+    {
+      title: "Mock Drills (Evacuation)",
+      type: "mock_drills",
+      url: "assets/img/evacuation_mock.jpg",
+      description:
+        "A “mock drill” is a scenario in which participants practise how they would react in the event of a disaster or emergency. For the sake of safety, mock drills are held in schools, colleges, hospitals, apartments, industries, and organisations around the world. Mock drills are a sort of training exercise that is used to assess an organization’s readiness and identify problem areas. ",
+    },
+    {
+      title: "First aid trainings",
+      type: "first_aid",
+      url: "assets/img/first_aid.jpg",
+      description:
+        "It includes initial intervention in a serious condition prior to professional medical help being available, such as performing cardiopulmonary resuscitation (CPR) while waiting for an ambulance, as well as the complete treatment of minor conditions, such as applying a plaster to a cut.",
+    },
+    {
+      title: "Airport Process safety",
+      type: "airport_process",
+      url: "assets/img/airport.webp",
+      description:
+        "Airport security includes the techniques and methods used in an attempt to protect passengers, staff, aircraft, and airport property from malicious harm, crime, terrorism, and other threats.",
     },
   ];
 
