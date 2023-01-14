@@ -278,7 +278,7 @@
     {
       title: "Environmental safety",
       type: "environmental_safety",
-      url: "assets/img/Safety and Environmental Management.png",
+      url: "assets/img/environmental.jpg",
       description:
         "Environment, health and safety, EHS is an acronym for the set that studies and implements the practical aspects of protecting the environment and maintaining health and safety at occupation. In simple terms it is what organizations must do to make sure that their activities do not cause harm to anyone.",
     },
