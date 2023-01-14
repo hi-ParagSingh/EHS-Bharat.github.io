@@ -9,7 +9,7 @@
     <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/logo_small.png" rel="icon" />
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
@@ -44,17 +44,15 @@
     <header id="header" class="fixed-top d-flex align-items-center">
       <div class="container d-flex align-items-center justify-content-between">
         <div class="logo">
-          <h1 class="text-light">
-            <a href="index.html"><span>EHS Bharat</span></a>
-          </h1>
-          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+          <a href="/"
+            ><img src="assets/img/logo_small.png" alt="" class="img-fluid"
+          /></a>
         </div>
 
         <nav id="navbar" class="navbar">
           <ul>
             <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
             <li><a class="nav-link scrollto" href="#about">Know Us</a></li>
-            <li><a class="nav-link scrollto" href="#services">Services</a></li>
             <li>
               <a class="nav-link scrollto" href="#portfolio">Trainings</a>
             </li>
@@ -81,15 +79,16 @@
               EHS BHARAT is one of its kind company which is 100% Indian and
               proudly supports make in India program with a slogan “also design
               in India”.
+              <br /><br />
+              EHS Bharat is currently providing it's services at 8 major
+              airports of India. Company is also working in the filed of real
+              estate, hotel industry and shopping malls.
             </h2>
-            <div>
-              <a href="#about" class="btn-get-started scrollto">Get Started</a>
-            </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img">
             <img
-              src="assets/img/hero-img.svg"
-              class="img-fluid animated"
+              src="assets/img/ergonomics.png"
+              class="img-fluid animated bordered-img"
               alt=""
             />
           </div>
@@ -107,8 +106,8 @@
               class="col-lg-5 d-flex align-items-center justify-content-center about-img"
             >
               <img
-                src="assets/img/about-img.svg"
-                class="img-fluid"
+                src="assets/img/Safety and Environmental Management.png"
+                class="img-fluid bordered-img"
                 alt=""
                 data-aos="zoom-in"
               />
@@ -150,11 +149,12 @@
               Real Estate (Commercial & Residential), Indoor & Outdoor Signage’s
               Advertisement industry, Cement, Oil and Gas, Construction
               Industry, Telecom, Manufacturing, Breweries and Distilleries etc.
-              in a more efficient and safer ways. <br />
-              <br />Superior Customer Satisfaction- We provide exceptional
-              service and are known in BHARAT as the best EHS Solutions
-              Provider. Through our innovations and technical solutions, we
-              improve our customer’s safety and financial performance.
+              in a more efficient and safer ways.<br />
+              <br />
+              Superior Customer Satisfaction- We provide exceptional service and
+              are known in BHARAT as the best EHS Solutions Provider. Through
+              our innovations and technical solutions, we improve our customer’s
+              safety and financial performance.
             </p>
           </div>
 
@@ -186,27 +186,36 @@
                 <div class="address">
                   <i class="bi bi-geo-alt"></i>
                   <h4>Location:</h4>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <p>
+                    38A, Rajendra Park, Sector 105 <br />Gurugram, <br />Haryana
+                    122006 <br /><br />
+                  </p>
                 </div>
 
                 <div class="email">
                   <i class="bi bi-envelope"></i>
                   <h4>Email:</h4>
-                  <p>info@example.com</p>
+                  <p>safetycompliance@ehsbharat.com</p>
                 </div>
 
                 <div class="phone">
                   <i class="bi bi-phone"></i>
                   <h4>Call:</h4>
-                  <p>+1 5589 55488 55s</p>
+                  <p>+91 8587081112</p>
                 </div>
 
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                  width="100%"
+                  height="300"
                   frameborder="0"
-                  style="border: 0; width: 100%; height: 290px"
-                  allowfullscreen
-                ></iframe>
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Block%20G,%20Rajendra%20Park,%20Sector%20105,%20Gurugram+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                  ><a href="https://www.maps.ie/distance-area-calculator.html"
+                    >measure area map</a
+                  ></iframe
+                >
               </div>
             </div>
 
@@ -215,65 +224,38 @@
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <form
-                action="forms/contact.php"
-                method="post"
-                role="form"
-                class="php-email-form"
-              >
+              <form action="mail.php" method="post" class="php-email-form">
                 <div class="row">
                   <div class="form-group col-md-6">
                     <label for="name">Your Name</label>
                     <input
+                      class="form-control"
                       type="text"
                       name="name"
-                      class="form-control"
-                      id="name"
-                      placeholder="Your Name"
-                      required
+                      placeholder="Your name.."
                     />
                   </div>
                   <div class="form-group col-md-6 mt-3 mt-md-0">
-                    <label for="name">Your Email</label>
+                    <label for="lname">Email</label>
                     <input
-                      type="email"
                       class="form-control"
+                      type="email"
                       name="email"
-                      id="email"
-                      placeholder="Your Email"
-                      required
+                      placeholder="Your email.."
                     />
                   </div>
-                </div>
-                <div class="form-group mt-3">
-                  <label for="name">Subject</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="subject"
-                    id="subject"
-                    placeholder="Subject"
-                    required
-                  />
-                </div>
-                <div class="form-group mt-3">
-                  <label for="name">Message</label>
-                  <textarea
-                    class="form-control"
-                    name="message"
-                    rows="10"
-                    required
-                  ></textarea>
-                </div>
-                <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">
-                    Your message has been sent. Thank you!
+                  <div class="form-group mt-3">
+                    <label for="message">Message</label>
+                    <textarea
+                      class="form-control"
+                      name="message"
+                      placeholder="Write something.."
+                      style="height: 200px"
+                    ></textarea>
                   </div>
                 </div>
                 <div class="text-center">
-                  <button type="submit">Send Message</button>
+                  <input type="submit" value="Send Message" />
                 </div>
               </form>
             </div>
@@ -290,13 +272,16 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-3 col-md-6 footer-contact">
-              <h3>Ninestars</h3>
+              <img
+                src="assets/img/Logo.png"
+                alt=""
+                class="img-fluid bottom_logo"
+              />
               <p>
-                A108 Adam Street <br />
-                New York, NY 535022<br />
-                United States <br /><br />
-                <strong>Phone:</strong> +1 5589 55488 55<br />
-                <strong>Email:</strong> info@example.com<br />
+                38A, Rajendra Park, Sector 105 <br />Gurugram, <br />Haryana
+                122006 <br /><br />
+                <strong>Phone:</strong> +91 8587081112<br />
+                <strong>Mail:</strong> safetycompliance@ehsbharat.com<br />
               </p>
             </div>
 
@@ -310,7 +295,7 @@
                   <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
                 </li>
                 <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Trainings</a>
                 </li>
               </ul>
             </div>
@@ -319,22 +304,24 @@
               <h4>Our top trainings</h4>
               <ul>
                 <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">Web Design</a>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Airport Safety (OPS & Project)</a>
                 </li>
                 <li>
                   <i class="bx bx-chevron-right"></i>
-                  <a href="#">Web Development</a>
+                  <a href="#">Work at Height Safety</a>
                 </li>
                 <li>
                   <i class="bx bx-chevron-right"></i>
-                  <a href="#">Product Management</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">Marketing</a>
+                  <a href="#">Fire Safety</a>
                 </li>
                 <li>
                   <i class="bx bx-chevron-right"></i>
-                  <a href="#">Graphic Design</a>
+                  <a href="#">Basic Electrical Safety</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Construction Safety</a>
                 </li>
               </ul>
             </div>
